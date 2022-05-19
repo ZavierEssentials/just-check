@@ -2,7 +2,7 @@
 const readMore = document.querySelector('.readmore');
 const dots = document.querySelector('.dots');
 const moreText = document.querySelector('.more');
-
+const projects = document.querySelector('.projects');
 
 
 readMore.addEventListener('click', () => {
@@ -18,3 +18,19 @@ readMore.addEventListener('click', () => {
     }
 
 })
+
+projects.addEventListener('click', (e) => {
+    if (e.target.className === 'project') {
+        // get link 
+        const link = e.target.lastElementChild;
+
+        link.click();
+    } else if (e.target.parentElement.className === 'project') {
+        const link = e.target.parentElement.lastElementChild;
+
+        link.click();
+    } else {
+
+    }
+})
+
