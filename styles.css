@@ -141,6 +141,7 @@ img {
 
 .project img {
     width: 100px;
+    margin-right: 10px;
 }
 .project {
     height: 100px;
@@ -157,4 +158,8 @@ footer {
     background-color: #133987;
     color: #fff !important;
     padding: 5% 5% 2%;
+}
+
+footer a {
+    color: #fff;
 }
