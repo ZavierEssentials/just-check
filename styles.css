@@ -53,19 +53,30 @@ img {
 
 
 
-
-.navbar {
-    z-index: 1000;
-    width: 100%;
-    /* background-color: #f6f6f6; */
-    padding: 2% 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
 .container {
     padding: 0 5%;
 }
+.navbar {
+    z-index: 1000;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.btn-getCard {
+    position: relative;
+    top: -5px;
+}
+
+.navbar-brand {
+    width: 100px;
+}
+
 .profile-image {
     position: relative;
 }
@@ -159,8 +170,21 @@ footer {
     background-color: #133987;
     color: #fff !important;
     padding: 5% 5% 2%;
+    position: relative;
 }
 
-footer a {
+.back-to-top {
+    padding: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #133987;
+    font-size: 1rem ;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+footer a, footer a:focus {
     color: #fff;
 }
