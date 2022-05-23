@@ -3,6 +3,7 @@ const readMore = document.querySelector('.readmore');
 const dots = document.querySelector('.dots');
 const moreText = document.querySelector('.more');
 const projects = document.querySelector('.projects');
+const toTop = document.querySelector('.back-to-top');
 
 
 readMore.addEventListener('click', () => {
@@ -34,3 +35,7 @@ projects.addEventListener('click', (e) => {
     }
 })
 
+toTop.addEventListener ( 'click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
