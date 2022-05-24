@@ -6,8 +6,8 @@ const projects = document.querySelector('.projects');
 const toTop = document.querySelector('.back-to-top');
 
 
-readMore.addEventListener('click', () => {
-
+const openMore = () => {
+    
     if(dots.style.display === 'none') {
         dots.style.display = 'inline-block'
         readMore.innerHTML = "Read more";
@@ -17,8 +17,7 @@ readMore.addEventListener('click', () => {
         readMore.innerHTML = "Show less";
         moreText.style.display = "inline";
     }
-
-})
+}
 
 projects.addEventListener('click', (e) => {
     if (e.target.className === 'project') {
@@ -39,3 +38,5 @@ toTop.addEventListener ( 'click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+readMore.addEventListener('click', openMore);
